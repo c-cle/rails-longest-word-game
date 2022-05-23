@@ -1,0 +1,11 @@
+<h1>New game</h1>
+<br>
+<%= @letters %>
+<br>
+<form action="/score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input name="letters" type="hidden" value= "<%=@letters%>"/>
+  <input name="timestart" type="hidden" value="<%= Time.now %>"/>
+  <input type="text" name="word" placeholder="Guess the word">
+  <input type="submit">
+</form>

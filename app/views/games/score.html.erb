@@ -1,0 +1,8 @@
+<h1>Result</h1>
+<p>Your attempt: <%= @attempt %> </p>
+<p>The letters available: <%= @letters %></p>
+<p><%= @attempt %> <%= @message %> </p>
+<p>You scored <%= @points.round(2) %> points </p>
+<p>You guessed the word in <%= @time.round(2) %> seconds</p>
+
+<a href="/new">Play again!</a>
